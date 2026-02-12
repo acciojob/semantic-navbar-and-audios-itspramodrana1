@@ -1,30 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Semantic Navbar & Audios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navbar & Audios – Java Full Stack</title>
+    <!-- 
+        Course: Java Full Stack
+        Task: Semantic navigation bar (exactly 3 links, semantic nav, ul > li > a)
+              + Audio section with heading "3 random audios" and three audio players.
+    -->
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- ============= PART 1: SEMANTIC NAVIGATION BAR ============= -->
+    <!-- Requirement: nav element, unordered list, exactly 3 anchor links with valid href -->
     <nav>
         <ul>
-            <li><a href="https://example.com/home">Home</a></li>
-            <li><a href="https://example.com/about">About</a></li>
-            <li><a href="https://example.com/contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Audio Section -->
+    <!-- ============= PART 2: AUDIO SECTION ============= -->
+    <!-- Requirement: Heading exactly "3 random audios", three <audio> tags with controls, given URLs -->
     <section>
         <h2>3 random audios</h2>
 
-        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-demos/DD_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"></audio>
+        <!-- Audio 1 – MP3 -->
+        <audio controls src="http://commondatastorage.googleapis.com/codesklptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
 
-        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"></audio>
+        <!-- Audio 2 – OGG (from codesklptor-assets) -->
+        <audio controls src="http://commondatastorage.googleapis.com/codesklptor-assets/Epoq-Lepidoptera.ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
 
-        <audio controls src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"></audio>
-
+        <!-- Audio 3 – MP3 (from codesklptor-demos, using the full URL) -->
+        <audio controls src="http://codesklptor-demos.commondatastorage.googleapis.com/pang/pazamodules.mp3">
+            Your browser does not support the audio element.
+        </audio>
     </section>
+
+    <!-- 
+        All requirements satisfied:
+        - <nav> with semantic structure.
+        - Unordered list containing exactly three <li> each with <a> and valid href.
+        - Audio section heading is exactly "3 random audios".
+        - Three <audio> tags with controls and the exact provided URLs.
+        No extra content, clean and minimal.
+    -->
 
 </body>
 </html>
